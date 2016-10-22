@@ -19,7 +19,7 @@ function formatAMPM(date) {
 //new post functions
 exports.new = function(req, res){
   if(req.session.admin == 'true'){
-    post.find({}).sort('-_id').execFind(function(err, posts){
+    post.find({}).sort('-_id').exec(function(err, posts){
       if(posts){
         res.render('admin', { title: title, subTitle:subTitle, posts:posts, admin:req.session.admin});
       }else{
@@ -66,7 +66,7 @@ exports.new_post_handler = function(req, res){
 //deleting posts functions
 exports.delete = function(req, res){
     if (req.session.admin == 'true'){
-      post.find({}).sort('-_id').execFind(function(err, posts){
+      post.find({}).sort('-_id').exec(function(err, posts){
       if(posts){
         res.render('admin_delete', { title: title, subTitle:subTitle, posts:posts, admin:req.session.admin});
       }else{

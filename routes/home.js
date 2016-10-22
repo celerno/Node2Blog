@@ -6,7 +6,7 @@ var post = mongoose.model('post');
 //Homepage functions
 exports.index = function(req, res){	
 
-  	post.find({}).sort('-_id').execFind(function(err, posts){
+  	post.find({}).sort('-_id').exec(function(err, posts){
   		if(posts){
   			res.render('home', { title: title, subTitle:subTitle, posts:posts, admin:req.session.admin});
   		}else{
