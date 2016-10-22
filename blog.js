@@ -2,8 +2,8 @@
  //change the subTitle variable to your blog sub-title
  //change the password variable to your admin password
  
- title = 'Node2Blog';
- subTitle = 'A simple blog made in Node.js'
+ title = 'Otros escribimos';
+ subTitle = 'Un blog para que tú escribas'
  password = 'narwhal';
  author = 'Unknown';
  icon = 'file_name.ico';

@@ -29,9 +29,9 @@ html
 		#nav
 			ol
 				a(href="/")
-					li Home
+					li Inicio
 				a(href="/about")
-					li About
+					li Sobre esto...
 				if(typeof admin == 'undefined')
 					- null
 				else
@@ -49,10 +49,10 @@ html
 					block wrapper_content
 				if(typeof posts == 'undefined')
 					.widget
-						a(href='/') Back to home
+						a(href='/') Ir al Inicio
 				else
 					.widget
-						p(style='font-size: 150%; font-weight:bold; border-bottom: 1px solid #b1b1b1;padding-bottom: 5px;margin-bottom: 4px;') Latest Posts
+						p(style='font-size: 150%; font-weight:bold; border-bottom: 1px solid #b1b1b1;padding-bottom: 5px;margin-bottom: 4px;') Últimos textos
 							br
 							pre
 							for post in posts
@@ -63,4 +63,4 @@ html
 				#footer
 					#footer_text
 						p
-							| Using the Node2Blog template and running on a Node.js server
+							| Créditos a Node2Blog.
