@@ -6,9 +6,8 @@ var Schema = mongoose.Schema
 
 //process.env.MONGOHQ_URL is for deploying on heroku
 //node2blog can be changed to whatever you want your local database to be called i.e. 'my database'
-var db_url = process.env.MONGODB_URI || "mongodb://localhost:27017/node2blog", 
-    //db = mongoose.connect(db_url);
-    db = mongoose.connect('mongodb://heroku_pkc5rzfx:8n0s0gq311g8ckffmphj18o313@ds033145.mlab.com:33145/heroku_pkc5rzfx');
+var db_url = process.env.MONGODB_URI || "mongodb://localhost:27017/node2blog"; 
+var db = mongoose.connect(db_url);
 
 //The MongoDB Schema for your posts
 
