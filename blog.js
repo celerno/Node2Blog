@@ -59,7 +59,7 @@ app.configure('development', function(){
 });
 
 app.configure('production', function(){
-  siteUrl = 'http://'+req.host+'/';
+  siteUrl = 'http://blogmixte.herokuapp.com/';
   imageUrl = siteUrl+'images/'+icon;
   app.use(express.errorHandler()); 
 });
